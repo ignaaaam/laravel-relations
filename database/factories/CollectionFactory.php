@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Affiliation>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Collection>
  */
-class AffiliationFactory extends Factory
+class CollectionFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class AffiliationFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->unique()->word(),
+            //
         ];
     }
 }

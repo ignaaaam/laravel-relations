@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Affiliation extends Model
+class Collection extends Model
 {
     use HasFactory;
 
-    public function posts()
+    public function videos()
     {
-        return $this->hasManyThrough(Post::class, User::class);
+        return $this->morphMany(Video::class, 'watchable');
+
     }
 }
